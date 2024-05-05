@@ -16,6 +16,7 @@ Log4j - creating logs
 
 # Frameworks incorporated:
 Selenium framework  
+POM (Page Object Model) framework  
 TestNG framework  
 Maven framework  
 
