@@ -1,0 +1,727 @@
+{
+	"info": {
+		"_postman_id": "80ee4612-1903-40ec-9866-9ac620540ef7",
+		"name": "BookCart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34178231"
+	},
+	"item": [
+		{
+			"name": "Regular",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": 0,\r\n  \"firstName\": \"string\",\r\n  \"lastName\": \"string\",\r\n  \"username\": \"abcdef12345\",\r\n  \"password\": \"Pari@123\",\r\n  \"gender\": \"string\",\r\n  \"userTypeId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BookCart_url}}/api/Login",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Book",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ShoppingCart",
+			"item": [
+				{
+					"name": "/api/ShoppingCart/30254",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/ShoppingCart/30254",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"ShoppingCart",
+								"30254"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/ShoppingCart/30254",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BookCart_url}}/api/ShoppingCart/30254",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"ShoppingCart",
+								"30254"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/ShoppingCart/AddToCart/30254/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"bookId\": 2,\r\n        \"title\": \"Harry Potter and the Chamber of Secrets\",\r\n        \"author\": \"JKR\",\r\n        \"category\": \"Mystery\",\r\n        \"price\": 235,\r\n        \"coverFileName\": \"9d8f4978-0ef8-42d0-873a-4eb583439237HP2.jpg\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BookCart_url}}/api/ShoppingCart/AddToCart/30254/2",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"ShoppingCart",
+								"AddToCart",
+								"30254",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/ShoppingCart/30254/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/ShoppingCart/30254/2",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"ShoppingCart",
+								"30254",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/ecmascript",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/ShoppingCart/30254/2",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"ShoppingCart",
+								"30254",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "/api/Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Book",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/Book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BookCart_url}}/api/Book",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/Book/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Book/5",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Book",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Book/2",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Book",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/Book/GetCategoriesList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Book/GetCategoriesList",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Book",
+								"GetCategoriesList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/Book/GetSimilarBooks/5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Book/GetSimilarBooks/5",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Book",
+								"GetSimilarBooks",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Checkout",
+			"item": [
+				{
+					"name": "/api/CheckOut/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/CheckOut/1",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"CheckOut",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "/api/Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BookCart_url}}/api/Login",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "/api/Order/410",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Order/30254",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Order",
+								"30254"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "/api/User/30254",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/User/30254",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"User",
+								"30254"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/User/validateUserName/abcdef",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/User/validateUserName/abcdef12345",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"User",
+								"validateUserName",
+								"abcdef12345"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/User",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"User"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Wishlist",
+			"item": [
+				{
+					"name": "/api/Wishlist/30254",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Wishlist/30254",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Wishlist",
+								"30254"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/Wishlist/30254",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Wishlist/30254",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Wishlist",
+								"30254"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/Wishlist/ToggleWishlist/30254/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{BookCart_url}}/api/Wishlist/ToggleWishlist/30254/2",
+							"host": [
+								"{{BookCart_url}}"
+							],
+							"path": [
+								"api",
+								"Wishlist",
+								"ToggleWishlist",
+								"30254",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

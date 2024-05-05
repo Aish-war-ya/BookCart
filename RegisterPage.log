@@ -1,0 +1,14 @@
+11:19:05.752 [main] INFO  com.TestPack.RegisterPage - URL launched
+11:19:05.774 [main] INFO  com.TestPack.RegisterPage - TC_001 started
+11:19:05.884 [main] INFO  com.TestPack.RegisterPage - TC_002 started
+11:19:05.949 [main] INFO  com.TestPack.RegisterPage - TC_003 started
+11:19:06.012 [main] INFO  com.TestPack.RegisterPage - TC_006 started
+11:19:06.105 [main] INFO  com.TestPack.RegisterPage - TC_010 started
+11:19:06.164 [main] INFO  com.TestPack.RegisterPage - TC_014 started
+11:19:06.211 [main] INFO  com.TestPack.RegisterPage - TC_018 started
+11:19:06.271 [main] INFO  com.TestPack.RegisterPage - TC_022 started
+11:19:06.334 [main] INFO  com.TestPack.RegisterPage - TC_026 started
+11:19:06.398 [main] INFO  com.TestPack.RegisterPage - TC_028 started
+11:19:06.460 [main] INFO  com.TestPack.RegisterPage - TC_030 started
+11:19:06.517 [main] INFO  com.TestPack.RegisterPage - TC_042 started
+11:19:06.749 [main] INFO  com.TestPack.RegisterPage - Quitting browser

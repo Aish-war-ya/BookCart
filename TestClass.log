@@ -1,0 +1,17 @@
+11:21:22.008 [main] INFO  com.TestPack.TestClass - URL launched
+11:21:22.204 [main] INFO  com.TestPack.TestClass - Logging in
+11:21:23.627 [main] INFO  com.TestPack.TestClass - endToEnd started
+11:21:29.336 [main] INFO  com.TestPack.TestClass - Logging out
+11:21:30.777 [main] INFO  com.TestPack.TestClass - Logging in
+11:21:31.373 [main] INFO  com.TestPack.TestClass - testCase1 started
+11:21:31.479 [main] INFO  com.TestPack.TestClass - Logging out
+11:21:32.878 [main] INFO  com.TestPack.TestClass - Logging in
+11:21:33.376 [main] INFO  com.TestPack.TestClass - testCase3 started
+11:21:33.712 [main] INFO  com.TestPack.TestClass - Logging out
+11:21:35.136 [main] INFO  com.TestPack.TestClass - Logging in
+11:21:35.584 [main] INFO  com.TestPack.TestClass - testCase4 started
+11:21:58.232 [main] INFO  com.TestPack.TestClass - Logging out
+11:21:59.663 [main] INFO  com.TestPack.TestClass - Logging in
+11:22:00.078 [main] INFO  com.TestPack.TestClass - testCase5 started
+11:22:00.380 [main] INFO  com.TestPack.TestClass - Logging out
+11:22:01.850 [main] INFO  com.TestPack.TestClass - Quitting browser

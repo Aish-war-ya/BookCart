@@ -1,0 +1,12 @@
+11:18:17.299 [main] INFO  com.TestPack.MainPage - Url launched
+11:18:17.347 [main] INFO  com.TestPack.MainPage - TC_001 started
+11:18:17.441 [main] INFO  com.TestPack.MainPage - TC_005 started
+11:18:17.498 [main] INFO  com.TestPack.MainPage - TC_008 started
+11:18:17.559 [main] INFO  com.TestPack.MainPage - TC_011 started
+11:18:17.621 [main] INFO  com.TestPack.MainPage - TC_014 started
+11:18:17.682 [main] INFO  com.TestPack.MainPage - TC_017 started
+11:18:17.744 [main] INFO  com.TestPack.MainPage - TC_020 started
+11:18:17.789 [main] INFO  com.TestPack.MainPage - TC_021 started
+11:18:21.223 [main] INFO  com.TestPack.MainPage - TC_022 started
+11:18:21.291 [main] INFO  com.TestPack.MainPage - tst started
+11:18:21.558 [main] INFO  com.TestPack.MainPage - Quitting browser
